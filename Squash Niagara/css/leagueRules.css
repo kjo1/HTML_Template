@@ -17,9 +17,16 @@ body {
     border: 0;
 }
 
+.card-footer {
+    text-align: center;
+    color: #383361;
+}
 
+.card-header {
+padding-left: 30px;
+}
 
-.dropdown {
+/*.dropdown {
     position: absolute;
     right: 10px;
     font-size: 11px;
@@ -27,11 +34,11 @@ body {
 
 .dropdown-item {
     font-size: 11px;
-}
+}*/
 
 .card-header {
-font-size: 1.2em;
-font-weight: bold;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .container-fluid {
