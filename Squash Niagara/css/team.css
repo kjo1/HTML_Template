@@ -30,23 +30,26 @@ body {
     border-color: #383361;
 }
 
-    .btn:hover{
+    .btn:hover {
         background-color: #5E54A0;
     }
 
-    .btn
-    /*.dropdown {
+/*.table-hover:matches(:hover){
+    color: #5E54A0;
+}*/
+
+/*.dropdown {
 	position: absolute;
 	right: 10px;
 	font-size: 11px;
 }*/
-    /*.dropdown-item {
+/*.dropdown-item {
 	font-size: 11px;
 }*/
-    .card-header {
-        font-size: 1.2em;
-        font-weight: bold;
-    }
+.card-header {
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
 .table {
     width: 100%;
