@@ -30,10 +30,20 @@ body {
 }
 
 .card-header {
-font-size: 1.2em;
-font-weight: bold;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .container-fluid {
     max-width: 1200px;
 }
+
+.btn {
+    background-color: #5E54A0;
+    border-color: #5E54A0;
+}
+
+    .btn:hover {
+        background-color: #383361;
+        border-color: #383361;
+    }
