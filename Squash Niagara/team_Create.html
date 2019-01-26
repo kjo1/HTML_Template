@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/team.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -71,6 +71,7 @@
                 <div class="form-group" style="padding-left:60px; padding-right:60px;">
                     <label for="Username">Team Name</label>
                     <input type="Text" class="form-control" id="username" placeholder="Team Name">
+                    <br />
                     <!--<small id="UsernameHelp" class="form-text text-muted">Create Username</small>-->
                     <label for="Select" class="col-sm-2 control-label">Division</label>
                     <select class="form-control">
@@ -79,9 +80,23 @@
                         <option>Men's Division 4</option>
                         <option>Women's Division</option>
                     </select>
-                    <label for="Players" class="col-sm-2 control-label">Player</label>
+                    <br />
+                    <label for="Player" class="col-sm-2 control-label">Player</label>
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <br />
+                    <br />
+                    <select class="mdb-select md-form colorful-select dropdown-primary" multiple searchable="Search here..">
+                        <option value="" disabled selected style="width:500px; height:50px;">Choose player</option>
+                        <option value="1">Bowie, Matt</option>
+                        <option value="2">Forgeron, Rachael</option>
+                        <option value="3">Forgeron, Dave</option>
+                        <option value="4">Lipinski, Jakub</option>
+                        <option value="5">Christie, Adam</option>
+                    </select><br />
+
+                    <button type="submit" class="btn btn-dark">Save</button>
+                    <button type="submit" class="btn btn-dark btn-secondary">Cancel</button>
                 </div>
                 <!--<div class="form-group">
                     <label for="InputPassword1">Password</label>
@@ -95,8 +110,7 @@
                     <label for="formGroupExampleInput2">Last Name</label>
                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
                 </div>-->
-                <button type="submit" class="btn btn-dark">Save</button>
-                <button type="submit" class="btn btn-dark btn-secondary">Cancel</button>
+
 
             </form>
         </div>
