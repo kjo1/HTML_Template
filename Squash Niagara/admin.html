@@ -68,20 +68,27 @@
   </nav> -->
 </div>
 <content> 
-<h2>Admin</h2>
-<hr class="my-3">
+
 <div class="container">
+    <h2>Admin</h2>
+    <hr class="my-3">
 	<div class="row">
 		<div class="col-sm">
 			<table class="table table-hover">
 				<thead class="thead-dark">
                     <tr>
-                        <th scope="col"><a href="#" style="color:white">Manage Teams</a></th>
+                        <th scope="col"><a style="color:white" data-toggle="collapse" href="#collapseTeams" role="button" aria-expanded="false" aria-controls="collapseExample">Manage Teams</a></th>
+                        <div class="collapse" id="collapseTeams">
+                            <ul>
+                                <li><a class="list-group-item" href="#">Create</a></li>
+                                <li><a class="list-group-item" href="#">Select a Player</a></li>
+                            </ul>
+                        </div>
                     </tr>
 				</thead>
                 <tbody>
                     <tr>
-                        <th scope"row">Example1</th>
+                        <th scope="row"> <img src="pictures/teampicture.jpg"   alt=""></th>
                     </tr>
                 </tbody>
 			</table>
@@ -90,12 +97,18 @@
             <table class="table table-hover">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col"><a href="#" style="color:white">Manage Players</a></th>
+                        <th scope="col"><a style="color:white" data-toggle="collapse" href="#collapsePlayers" role="button" aria-expanded="false" aria-controls="collapseExample">Manage Players</a></th>
+                        <div class="collapse" id="collapsePlayers">
+                            <ul>
+                                <li><a class="list-group-item" href="playerdetails.html">Create</a></li>
+                                <li><a class="list-group-item" href="ListOfPlayers.html">Select a Player</a></li>           
+                            </ul>
+                        </div>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope"row">Example1</th>
+                        <th scope="row"> <img src="pictures/playerspicture.jpg"  alt=""></th>
                     </tr>
                 </tbody>
             </table>
@@ -103,13 +116,22 @@
 		<div class="col-sm">
             <table class="table table-hover">
                 <thead class="thead-dark">
-                <tr>
-                    <th scope="col"><a href="#" style="color:white">Manage Seasons</a></th>
-                </tr>
+                    <tr>
+                        <th scope="col"><a style="color:white" data-toggle="collapse" href="#collapseSeason" role="button" aria-expanded="false" aria-controls="collapseExample">Manage Seasons</a></th>
+                        <div class="collapse" id="collapseSeason">
+                            <ul>
+                                <li><a class="list-group-item" href="#">Create</a></li>
+                                <!--<li><a class="list-group-item" href="#">Edit</a></li>
+                                <li><a class="list-group-item" href="#">Delete</a></li>
+                                <li><a class="list-group-item" href="#">Details</a></li>-->
+                                <li><a class="list-group-item" href="#">Season Details</a></li>
+                            </ul>
+                        </div>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope"row">Example1</th>
+                        <th scope"row"> <img src="pictures/seasonpicture.jpg"></th>
                     </tr>
                 </tbody>
             </table>
