@@ -21,6 +21,11 @@ body {
     border: 0;
 }
 
+.faded {
+    color: #383361;
+    font-weight: bold;
+}
+
 .form-inline {
     color: #5E54A0;
 }
