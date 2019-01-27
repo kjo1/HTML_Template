@@ -44,6 +44,12 @@ body {
         border-color: #5E54A0;
     }
 
+.btn-success {
+    color: #ffffff;
+    background-color: #161617;
+    border-color: #494F57;
+}
+
 /*.table-hover:matches(:hover){
     color: #5E54A0;
 }*/
