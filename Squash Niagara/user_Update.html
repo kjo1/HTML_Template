@@ -64,15 +64,36 @@
 
         <div class="container">
             <br />
-            <h2>Update Team</h2>
+            <h2>Update a User</h2>
             <hr class="my-3">
-            <form>
+            <form style="margin-bottom:20px;">
+                <div class="form-group">
+                    <label for="Username">User ID</label>
+                    <input type="Text" class="form-control" id="userid" value="admin1@outlook.com">
+                    <small id="UsernameHelp" class="form-text text-muted">Create Username</small>
 
-                <div class="form-group" style="padding-left:60px; padding-right:60px;">
-                    <label for="Username">Team Name</label>
-                    <input type="Text" class="form-control" id="username" value="Ridely 2">
-                    <br />
-                    <!--<small id="UsernameHelp" class="form-text text-muted">Create Username</small>-->
+                    <label for="InputPassword1">Password</label>
+                    <input type="password" class="form-control" id="InputPassword1" value="**************">
+
+                    <label for="formGroupExampleInput">First Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" value="Mark">
+
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" class="form-control" id="MiddleName" >
+
+                    <label for="formGroupExampleInput2">Last Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" value="Otto">
+
+                    <label style="margin-top:10px;">Gender</label>
+                    <div class="radio-inline">
+                        <label><input type="radio" name="optradio">Male</label>
+                        <label><input type="radio" name="optradio">Female</label>
+                        <label><input type="radio" name="optradio">N/A</label>
+                    </div>
+
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email" value="admin1@outlook.com">
+
                     <label for="Select" class="col-sm-2 control-label">Division</label>
                     <select class="form-control">
                         <option disabled>Select a Division</option>
@@ -81,48 +102,27 @@
                         <option>Men's Division 4</option>
                         <option>Women's Division</option>
                     </select>
-                    <br />
-                    <label for="Player" class="col-sm-2 control-label">Player</label>
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button><br /><br />
-                    <select class="mdb-select md-form colorful-select dropdown-primary" style="stop-color:#5E54A0;" multiple searchable="Search here..">
-                        <option value="0" selected disabled style="width:500px; height:30px;">Players</option>
-                        <option value="1">Pirani, Saif</option>
-                        <option value="1">Pirani, Jeff</option>
 
-                    </select><br />
+                    <label for="Select" class="col-sm-2 control-label">Team</label>
+                    <select id="Select" class="form-control">
+                        <option disabled>Select a Team</option>
+                        <option>Brock 1</option>
+                        <option>Radely 2</option>
+                        <option selected>White Oaks 2</option>
+                        <option>White Oaks 3</option>
+                    </select>
 
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ADD</button>
-                    <br />
-                    <br />
-                    <label for="members" class="col-sm-2 control-label">Members</label><br />
-                    <select class="mdb-select md-form colorful-select dropdown-primary" style="stop-color:#5E54A0;" multiple searchable="Search here..">
-                        <option value="0" disabled selected style="width:500px; height:30px;">Members</option>
-                        <option value="1">Forgeron, Rachael</option>
-                        <option value="2">Forgeron, Dave</option>
-                        <option value="3">Rapley, Dave</option>
-                        <option value="4">Devalk, Robert</option>
-                    </select><br />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Remove</button><br /><br />
+                    <label>Role</label>
+
+                    <div class="radio-inline">
+                        <label><input type="radio" name="optradio">Admin</label>
+                        <label><input type="radio" name="optradio">Captain</label>
+                        <label><input type="radio" name="optradio">N/A</label>
+                    </div>
 
 
                     <button type="submit" class="btn btn-dark">Update</button>
-                    <button type="submit" class="btn btn-dark btn-secondary">Cancel</button>
-                </div>
-                <!--<div class="form-group">
-                    <label for="InputPassword1">Password</label>
-                    <input type="password" class="form-control" id="InputPassword1" placeholder="Create Password">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">First Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2">Last Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                </div>-->
-
-
+                    <button type="submit" class="btn btn-dark">Cancel</button>
             </form>
         </div>
     </content>

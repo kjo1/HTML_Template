@@ -64,65 +64,71 @@
 
         <div class="container">
             <br />
-            <h2>Update Team</h2>
+            <h2>Create a User</h2>
             <hr class="my-3">
-            <form>
-
-                <div class="form-group" style="padding-left:60px; padding-right:60px;">
-                    <label for="Username">Team Name</label>
-                    <input type="Text" class="form-control" id="username" value="Ridely 2">
-                    <br />
-                    <!--<small id="UsernameHelp" class="form-text text-muted">Create Username</small>-->
-                    <label for="Select" class="col-sm-2 control-label">Division</label>
-                    <select class="form-control">
-                        <option disabled>Select a Division</option>
-                        <option selected>Men's Division 1/2</option>
-                        <option>Men's Division 3</option>
-                        <option>Men's Division 4</option>
-                        <option>Women's Division</option>
-                    </select>
-                    <br />
-                    <label for="Player" class="col-sm-2 control-label">Player</label>
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button><br /><br />
-                    <select class="mdb-select md-form colorful-select dropdown-primary" style="stop-color:#5E54A0;" multiple searchable="Search here..">
-                        <option value="0" selected disabled style="width:500px; height:30px;">Players</option>
-                        <option value="1">Pirani, Saif</option>
-                        <option value="1">Pirani, Jeff</option>
-
-                    </select><br />
-
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ADD</button>
-                    <br />
-                    <br />
-                    <label for="members" class="col-sm-2 control-label">Members</label><br />
-                    <select class="mdb-select md-form colorful-select dropdown-primary" style="stop-color:#5E54A0;" multiple searchable="Search here..">
-                        <option value="0" disabled selected style="width:500px; height:30px;">Members</option>
-                        <option value="1">Forgeron, Rachael</option>
-                        <option value="2">Forgeron, Dave</option>
-                        <option value="3">Rapley, Dave</option>
-                        <option value="4">Devalk, Robert</option>
-                    </select><br />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Remove</button><br /><br />
-
-
-                    <button type="submit" class="btn btn-dark">Update</button>
-                    <button type="submit" class="btn btn-dark btn-secondary">Cancel</button>
+            <form style="margin-bottom:20px;">
+                <div class="form-group">
+                    <label for="Username">User ID</label>
+                    <input type="Text" class="form-control" id="username" placeholder="User ID">
+                    <small id="UsernameHelp" class="form-text text-muted">Create Username</small>
                 </div>
-                <!--<div class="form-group">
+                <div class="form-group">
                     <label for="InputPassword1">Password</label>
                     <input type="password" class="form-control" id="InputPassword1" placeholder="Create Password">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput">First Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter player's first name">
+                </div>
+                <div class="form-group">
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" class="form-control" id="MiddleName" placeholder="Enter player's middle name">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Last Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                </div>-->
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter player's Last name">
+                </div>
+                <label>Gender</label>
+                <div class="form-group">
+                    <div class="radio-inline">
+                        <label><input type="radio" name="optradio">Male</label>
+                        <label><input type="radio" name="optradio">Female</label>
+                        <label><input type="radio" name="optradio">N/A</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <label for="Select" class="col-sm-2 control-label">Division</label>
+                <select class="form-control">
+                    <option selected disabled>Select a Division</option>
+                    <option>Men's Division 1/2</option>
+                    <option>Men's Division 3</option>
+                    <option>Men's Division 4</option>
+                    <option>Women's Division</option>
+                </select>
+                <label for="Select" class="col-sm-2 control-label">Team</label>
+                <div class="form-group">
+                    <select id="Select" class="form-control">
+                        <option disabled selected>Select a Team</option>
+                        <option>Brock 1</option>
+                        <option>Radely 2</option>
+                        <option>White Oaks 2</option>
+                        <option>White Oaks 3</option>
+                    </select>
+                </div>
+                <label>Role</label>
+                <div class="form-group">
+                    <div class="radio-inline">
+                        <label><input type="radio" name="optradio">Admin</label>
+                        <label><input type="radio" name="optradio">Captain</label>
+                        <label><input type="radio" name="optradio">N/A</label>
+                    </div>
+                </div>
 
-
+                <button type="submit" class="btn btn-dark">Create</button>
+                <button type="submit" class="btn btn-dark">Cancel</button>
             </form>
         </div>
     </content>
