@@ -65,14 +65,14 @@
         </nav>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <!--<li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
-            </li>-->
+            </li>
 
             <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -80,28 +80,38 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">2018-2019 Men's Division 1/2</a>
-                    <!--<div class="dropdown-divider"></div>-->
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">2018-2019 Men's Division 3</a>
                     <a class="dropdown-item" href="#">2018-2019 Men's Division 4</a>
                     <a class="dropdown-item" href="#">2018-2019 Women's Division</a>
                 </div>
             </li>
-            <!--<li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>-->
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-    </div>
+    </div>-->
 
 
     <content>
         <div class="wrapper">
             <main>
                 <div class="toolbar">
-                    <div class="current-month">January 2019</div>
+                    <div class="current-month">
+                        <!--January, 2019-->
+                        <input style="margin-right:20px;" type="date" name="bday" value="2019-01-28">
+                        <button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo()">To current month</button>
+                    </div>
+
+                    <!--<form action="/action_page.php">
+                        <input type="month" name="bdaymonth" value="2019-01">
+                    </form>-->
+
+                    <a href="Fixture_Create.html" class="btn btn-dark">ADD</a>
                 </div>
                 <div class="calendar">
                     <div class="calendar__header">
@@ -116,7 +126,7 @@
                     <div class="calendar__week">
                         <div class="calendar__day day" style="color:lightgrey">30</div>
                         <div class="calendar__day day" style="color:lightgrey">31 <br /><br />Brock 1 vs White Oaks1  </div>
-                        <div class="calendar__day day">1 <br /><br /><a href="teams_Details.html"> Ridley 2</a> vs White Oaks2</div>
+                        <div class="calendar__day day">1 <br /><br /><a href="teams_Details.html"> Ridley 2</a> vs White Oaks4</div>
                         <div class="calendar__day day">2</div>
                         <div class="calendar__day day">3 <br /><br />BAC 2 vs White Oaks 3</div>
                         <div class="calendar__day day">4 <br /><br />BAC 1 vs White Oaks 4</div>
